@@ -1,0 +1,15 @@
+
+spring:
+  security:
+    user:
+      name: user
+      password: user
+
+management:
+  endpoint:
+    mappings:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: ["health", "web", "mappings"]
